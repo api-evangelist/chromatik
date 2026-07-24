@@ -1,4 +1,16 @@
 aid: chromatik
+accessModel:
+  pricing: unknown
+  onboarding: unknown
+  trial: false
+  try_now: false
+  public: false
+  label: Unknown
+  confidence: low
+  source: []
+  generated: '2026-07-22'
+  method: derived
+image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/icons/chromatik.png
 name: Chromatik
 description: Chromatik is a company surfaced as a portfolio company of 500-global and added to the API
   Evangelist network as a stub for enrichment. This profile is a lead awaiting the enrichment pipeline.
@@ -9,9 +21,20 @@ x-backed-by:
 - 500-global
 x-tier: stub
 x-tier-reason: portfolio-lead
+x-website-status: expired-domain
+x-website-status-checked: '2026-07-20'
+x-website-status-detail: 'chromatik.com resolves to a Namecheap expired-domain parking
+  page (HTTPS TLS handshake fails; HTTP 200 serves only the parking landing; nameservers
+  ns1/ns2.lander.d.parity.domains). No live company site, developer portal, or API surface
+  exists to enrich. Dead lead — skip until the domain is live again. Re-probed 2026-07-20:
+  wildcard DNS sends every host (www/api/developer/docs/status/trust) to the same parking
+  IP 216.227.142.171; no MX, SPF, DMARC or CAA records; HTTPS still fails
+  (SSL_ERROR_SYSCALL on :443); /.well-known/security.txt, /openid-configuration,
+  /oauth-authorization-server, /api-catalog, /ai-plugin.json, /llms.txt and /openapi.json
+  all return 404. Nothing to search, harvest, or derive.'
 specificationVersion: '0.20'
 created: '2026-07-17'
-modified: '2026-07-17'
+modified: '2026-07-20'
 tags:
 - Company
 apis: []
@@ -23,3 +46,8 @@ maintainers:
 common:
 - type: Website
   url: https://chromatik.com
+x-enrichment:
+  date: '2026-07-20'
+  status: nochange
+  artifacts_added: 0
+  pass: local-v1
