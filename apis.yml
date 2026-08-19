@@ -32,7 +32,7 @@ x-website-status-detail: 'chromatik.com resolves to a Namecheap expired-domain p
   (SSL_ERROR_SYSCALL on :443); /.well-known/security.txt, /openid-configuration,
   /oauth-authorization-server, /api-catalog, /ai-plugin.json, /llms.txt and /openapi.json
   all return 404. Nothing to search, harvest, or derive.'
-specificationVersion: '0.20'
+specificationVersion: '0.23'
 created: '2026-07-17'
 modified: '2026-07-20'
 tags:
